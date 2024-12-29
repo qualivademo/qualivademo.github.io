@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Qualiva Demo</title>
+        <!-- Link to your image favicon -->
+        <link rel="icon" href="/static/imgs/logo_transparemt.png" type="image/x-icon">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/static/imgs/Q_logo.jpg" alt="Qualiva Logo">
+            </div>
+            <nav class="navigation">
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Qualiva</h1>
+            <p>Your Path to Excellence</p>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+<section id="about" class="section about-section">
+    <div class="about-card">
+        <div class="content">
+            <div class="text">
+                <h2>About Us</h2>
+                <p>At Qualiva, we are committed to providing businesses with bespoke quality solutions that elevate operational standards, drive efficiency, and achieve excellence in every process. Our services and solutions are designed to meet the highest industry standards while ensuring regulatory compliance and optimized performance across various sectors.</p>
+                <p>We believe in empowering organizations by transforming their quality management practices, enabling them to meet challenges head-on while exceeding customer expectations. With a global presence, Qualiva serves as a trusted partner for organizations striving for superior quality in their operations and products.</p>
+                <p><strong>Vision:</strong> To become a global leader in quality excellence, offering innovative solutions that redefine industry standards.</p>
+                <p><strong>Mission:</strong> To deliver tailored strategies that enhance operational efficiency, compliance, and sustainable growth for businesses across the globe.</p>
+            </div>
+        </div>
+
+        <!-- Meet Our Founder Section -->
+        <div class="founder">
+            <h2>Meet Our Founder</h2>
+            <div class="founder-info">
+                <div class="founder-image">
+                    <img src="/static/imgs/prof_q.jpg" alt="Nitin Nakti">
+                </div>
+                <div class="founder-details">
+                    <h3>Nitin Nakti</h3>
+                    <p><strong>Owner of Qualiva</strong></p>
+                    <p>A Seasoned Quality Assurance Professional with 21+ years in global FMCG industries, specializing in implementing cross-regional quality strategies across Asia-Pacific.</p>
+                    <p>Proven expertise in driving compliance, optimizing supply chain processes, and achieving operational excellence through strategic leadership. Adept at leading cross-functional teams and collaborating with top management to ensure the highest standards in product quality and regulatory compliance.</p>
+                    <p>Nitin has managed 10 plants and held 2 corporate quality head roles, overseeing 6 countries and leading more than 12 food categories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="/static/imgs/QM.jpg" alt="Service 1">
+                <h3>Quality Assurance Consultancy</h3>
+                <p>Comprehensive solutions to meet industry standards.</p>
+            </div>
+            <div class="service">
+                <img src="/static/imgs/TAW.jpg" alt="Service 2">
+                <h3>Training & Workshops</h3>
+                <p>Hands-on sessions to improve your team’s skills.</p>
+            </div>
+            <div class="service">
+                <img src="/static/imgs/AU.jpg" alt="Service 3">
+                <h3>Auditing Services</h3>
+                <p>Ensuring compliance through detailed assessments.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Courses Section -->
+<section id="courses" class="section">
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="/static/imgs/bg_courses.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content-overlay">
+        <h2>Featured Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="/static/imgs/7QC.jpg" alt="7 QC Tools">
+                <h3>7 QC Tools</h3>
+                <p>Duration: 4 days | ₹2,000</p>
+                <p class="description">Master quality control tools to improve processes.</p>
+            </div>
+            <div class="course-card">
+                <img src="/static/imgs/HA.jpg" alt="HACCP Implementation">
+                <h3>HACCP Implementation</h3>
+                <p>Duration: 5 days | ₹3,000</p>
+                <p class="description">Comprehensive training on food safety compliance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Us Section -->
+<section id="contact" class="section">
+    <h2>Contact US</h2>
+    <p class="contact-message">Feel free to contact us anytime! We're here to assist you.</p>
+    
+    <div class="contact-container">
+        <div class="email-box">
+            <a href="mailto:nitin.nakti@gmail.com" class="email-link">
+                <div class="icon-container">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="email-text">
+                    <span>nitin.nakti@gmail.com</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Include Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Qualiva (OPC) Private Limited. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">↑ Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
