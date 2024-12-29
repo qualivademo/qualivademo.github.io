@@ -1,1 +1,0 @@
-# qualivademo.github.io
