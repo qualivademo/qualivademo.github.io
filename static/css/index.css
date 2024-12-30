@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styles */
@@ -619,4 +620,69 @@ footer {
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Ensure the page is mobile-friendly */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em; /* Smaller heading */
+    }
+
+    .hero-content p {
+        font-size: 1em; /* Smaller text */
+    }
+
+    .nav-container {
+        padding: 10px 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navigation a {
+        padding: 8px 10px;
+        font-size: 1.2em;
+    }
+
+    .services-grid, .courses-grid {
+        grid-template-columns: 1fr; /* Stack services and courses */
+    }
+
+    .course-card, .service {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    #backToTop {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* For very small devices (portrait mode phones) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .service, .course-card {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .navigation a {
+        font-size: 1.1em;
+        padding: 6px 8px;
+    }
 }
