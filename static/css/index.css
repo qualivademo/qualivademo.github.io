@@ -339,7 +339,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Service Card Styling */
 .service {
     background: #fff;
     border-radius: 12px;
@@ -356,7 +355,7 @@ footer {
 .service img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;  /* Ensure image fits without cropping */
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -376,7 +375,6 @@ footer {
 
 /* Hover Effect - Make Service Card Larger */
 .service:hover {
-    transform: scale(1.1);  /* Makes the card 10% larger */
     box-shadow: 0 8px 15px rgba(3, 104, 153, 0.3);
     background: linear-gradient(135deg, #036899, #4facfe);
     color: #fff;
@@ -686,3 +684,89 @@ footer {
         padding: 6px 8px;
     }
 }
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  /* Carousel Slide */
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Service Items */
+  .service {
+    flex: 1 0 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Images inside the Service Cards */
+  .carousel-container .service img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Headings */
+  .carousel-container .service h3 {
+    color: #036899;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Descriptions */
+  .carousel-container .service p {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* Arrows */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .carousel-container .service img {
+      max-height: 200px;
+    }
+  
+    .carousel-arrow {
+      width: 30px;
+      height: 30px;
+      font-size: 1.2rem;
+    }
+  }
+  
