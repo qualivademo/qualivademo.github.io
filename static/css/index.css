@@ -1,17 +1,20 @@
 /* General Styles */
 body {
+    
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+   
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styles */
 /* Hero Section Styles */
 .hero {
+    
     background-image: url('/static/imgs/bg_1.jpg'); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the background image */
@@ -36,6 +39,7 @@ body {
 
 /* Navigation Styles */
 .nav-container {
+ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +53,7 @@ body {
 }
 
 .logo img {
+    
     height: 50px;
     width: auto;
 }
@@ -59,6 +64,7 @@ body {
 }
 
 .navigation a {
+
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -74,7 +80,7 @@ body {
 
 /* Hero Content */
 .hero-content {
-    margin-top: 120px;
+    margin-top: 140px;
     animation: fadeIn 2s ease-out;
     position: relative; /* Ensure text is above overlay */
     z-index: 2; /* Text should appear in front of the overlay */
@@ -769,4 +775,22 @@ footer {
       font-size: 1.2rem;
     }
   }
-  
+  .marquee-container {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    z-index: 9999;
+    position: static; /* Allow the marquee to appear naturally below the footer */
+}
+
+marquee {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.marquee-logo {
+    height: 30px;  /* Adjust the logo size */
+    margin-right: 10px;  /* Space between the logo and text */
+    vertical-align: middle;  /* Align logo with text */
+}
